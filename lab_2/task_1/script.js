@@ -7,12 +7,9 @@ new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 
-    mousewheel: {
-        sensitivity: 0.5
-    },
-
+    mousewheel: true,
+    keyboard: true,
     slidesPerView: 'auto',
-    slidesPerGroup: 1,
 
     spaceBetween: 30,
 

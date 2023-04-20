@@ -17,18 +17,18 @@ img {
 }
 
 .swiper {
-    width: 50%;
-    height: 50%;
+    top: 100%;
+    width: 70%;
+    height: 70%;
     padding: 20px;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
 }
 
 .swiper-slide{
-    text-align: center;
     width: auto;
 }
 
 .swiper-button-prev:after, .swiper-button-next:after{
-    color: midnightblue;
-    font-size: 30px;
+    color: rgb(0, 25, 253);
+    font-size: 50px;
 }
