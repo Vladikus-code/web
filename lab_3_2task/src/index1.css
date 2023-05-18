@@ -1,0 +1,64 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header input[type="text"] {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.job-search-widget {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.job-search-widget #job-listings {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.job-search-widget .job-listing {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.job-search-widget .job-listing h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.job-search-widget .job-listing p {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
