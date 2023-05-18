@@ -1,3 +1,4 @@
+import Swiper from './swiper.js'
 new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,

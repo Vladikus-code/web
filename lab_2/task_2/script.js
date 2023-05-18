@@ -56,11 +56,11 @@ function calculate() {
 				case "12 месяцев":
 					interestRate = 0.22;
 					break;
-					case "18 месяцев":
-						interestRate = 0.15;
-						break;
-					case
-						"24 месяцев":
+				case "18 месяцев":
+					interestRate = 0.15;
+					break;
+				case
+					"24 месяцев":
 					interestRate = 0.1;
 					break;
 				default:
