@@ -4,16 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack -w",
-    "start": "http-server",
+    "build": "webpack",
+    "start": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "bootstrap": "^5.2.3",
+    "css-loader": "^6.7.4",
+    "html-webpack-plugin": "^5.5.1",
     "http-server": "^14.1.1",
+    "image-webpack-loader": "^8.1.0",
+    "style-loader": "^3.3.3",
     "webpack": "^5.83.1",
-    "webpack-cli": "^5.1.1"
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0",
+    "webpack-plugin": "^1.0.5",
+    "webpack-server": "^0.1.2"
   }
 }

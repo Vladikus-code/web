@@ -134,7 +134,11 @@ new _swiper_js__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper', {
     spaceBetween: 30,
 
     freeMode: true,
+    
 })
+
+console.log('brbrb');
+
 })();
 
 /******/ })()
