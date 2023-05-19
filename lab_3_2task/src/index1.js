@@ -13,27 +13,27 @@ form.addEventListener('click', () => {
     let localId = 0;
     
     if (searchText.length === 0) {
-        alert("Укажите вакансию!")
+        alert("Вакансия не указана!")
         return
     }
 
-            axios
-                .get(`https://api.hh.ru/vacancies`, {
-                    params: {
-                        text: searchText,
-                    },
-                })
-                .then((response) => {
-                    jobListings.innerHTML = '';
-                    response.data.items.forEach((item) => {
-                        const jobListing = document.createElement('li');
-                        jobListing.classList.add('job-listing');
-                        jobListing.innerHTML = `
-              <h2>${item.name}</h2>              <p>${item.employer.name} - ${item.area.name}</p>
-              <a href="${item.alternate_url}" target="_blank">Apply now</a>`;
-                        jobListings.appendChild(jobListing);
-                    });
-                })
-                .catch((error) => console.error(error));
+    axios
+        .get(`https://api.hh.ru/vacancies`, {
+            params: {
+                text: searchText,
+            },
         })
+        .then((response) => {
+            jobListings.innerHTML = '';
+            response.data.items.forEach((item) => {
+                const jobListing = document.createElement('li');
+                jobListing.classList.add('job-listing');
+                jobListing.innerHTML = `
+      <h2>${item.name}</h2>              <p>${item.employer.name} - ${item.area.name}</p>
+      <a href="${item.alternate_url}" target="_blank">Apply now</a>`;
+                jobListings.appendChild(jobListing);
+            });
+            })
         .catch((error) => console.error(error));
+})
+.catch((error) => console.error(error));

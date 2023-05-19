@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode:"development",
+    devtool: 'source-map',
     entry: './src/index.js',
     output: {
         filename: 'main.js',
@@ -15,18 +16,15 @@ module.exports = {
                 use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.(png|jpg?g|svg)$/,
-                use: ['file-loader',
-                  {
-                    loader: 'image-webpack-loader',
-                  },
-                ],
-              },
+                test: /\.html$/i,
+                loader: "html-loader",
+            }
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
+            filename: 'index.html'
         })
     ],
 }

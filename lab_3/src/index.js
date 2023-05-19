@@ -1,28 +1,26 @@
-import Swiper from './swiper.js'
+import {Swiper, Navigation, Mousewheel, FreeMode} from 'swiper'
+import 'swiper/css'
+import 'swiper/css/navigation'
 import "./style.css"
-//import * from './images'
-
-function importAll(r) {
-    return r.keys().map(r);
-  }
-  
-const images = importAll(require.context('./', false, /\.(png|jpe?g|svg)$/));
 
 new Swiper('.swiper', {
-    direction: 'horizontal',
+    //direction: 'horizontal',
     loop: true,
+    //loopedSlides: true,
 
+    modules: [Navigation, Mousewheel, FreeMode],
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
 
+    //pagination: true,
     mousewheel: true,
-    slidesPerView: 'auto',
+    //slidesPerView: 'auto',
 
-    spaceBetween: 30,
+    //spaceBetween: 30,
 
-    freeMode: true,
+    //freeMode: true,
     
 })
 

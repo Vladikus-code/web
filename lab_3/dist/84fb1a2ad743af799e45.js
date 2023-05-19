@@ -11311,7 +11311,7 @@ new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
 
-    //modules: [Navigation],
+    modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation],
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

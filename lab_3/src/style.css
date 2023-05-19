@@ -18,14 +18,15 @@ img {
 
 .swiper {
     top: 100%;
-    width: 70%;
-    height: 70%;
+    width: 20%;
+    height: 80%;
     padding: 20px;
     border: 2px solid #000000;
 }
 
 .swiper-slide{
     width: auto;
+    text-align: center;
 }
 
 .swiper-button-prev:after, .swiper-button-next:after{
