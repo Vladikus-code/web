@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Карта с филиалами</title>
+    <!-- Подключаем API Яндекс Карт -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5e7e12e4-8fcf-4d04-8e91-7340ca3a345c&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="map"></div>
+
+    <!-- Добавляем выпадающий список -->
+    <label for="branchSelect">Выберите филиал:</label>
+    <select id="branchSelect">
+        <option value="Корпус 1">Корпус 1</option>
+        <option value="Корпус 2">Корпус 2</option>
+        <option value="Корпус 3">Корпус 3</option>
+        <option value="Корпус 4">Корпус 4</option>
+        <option value="Корпус 5">Корпус 5</option>
+        <option value="Корпус 6">Корпус 6</option>
+        <option value="Корпус 7">Корпус 7</option>
+        <option value="Корпус 8">Корпус 8</option>
+        <option value="Корпус err">Корпус err</option>
+    </select>
+    <script src="script.js"></script>
+</body>
+</html>
